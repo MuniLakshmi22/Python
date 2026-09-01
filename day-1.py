@@ -1,78 +1,185 @@
 # ============================================================
-# PYTHON DAY 1 - HOTEL FOOD ORDER
-# Topics: Python basics, Variables, Data Types, Type Conversion,
-#         Input and Output
+# PYTHON - VARIABLES, DATA TYPES AND TYPE CONVERSION
+# ============================================================
+# ============================================================
+# 1. VARIABLES
+# ============================================================
+name = "Lakshmi"
+age = 20
+is_student = True
+print("Variables")
+print("Name:", name)
+print("Age:", age)
+print("Student:", is_student)
 
+# ============================================================
+# 2. DATA TYPES
+# ============================================================
+# ------------------------------------------------------------
+# int
+# ------------------------------------------------------------
+age = 20
+print("\nInteger")
+print("Value:", age)
+print("Type:", type(age))
 
-print("Hello Python")
-
-
-hotel_name = "Sunrise Hotel"
-food_item = "Chicken Biryani"
-quantity = 2
+# ------------------------------------------------------------
+# float
+# ------------------------------------------------------------
 price = 250.50
-is_available = True
+print("\nFloat")
+print("Value:", price)
+print("Type:", type(price))
 
-print(hotel_name)
-print(food_item)
-print(quantity)
-print(price)
-print(is_available)
+# ------------------------------------------------------------
+# complex
+# ------------------------------------------------------------
+number = 3 + 4j
+print("\nComplex")
+print("Value:", number)
+print("Type:", type(number))
 
+# ------------------------------------------------------------
+# string
+# ------------------------------------------------------------
+name = "Lakshmi"
+print("\nString")
+print("Value:", name)
+print("Type:", type(name))
 
-hotel_name = "Sunrise Hotel"
-quantity = 2
-price = 250.50
-is_available = True
+# ------------------------------------------------------------
+# boolean
+# ------------------------------------------------------------
+is_student = True
+print("\nBoolean")
+print("Value:", is_student)
+print("Type:", type(is_student))
 
-print(type(hotel_name))
-print(type(quantity))
-print(type(price))
-print(type(is_available))
+# ------------------------------------------------------------
+# list
+# ------------------------------------------------------------
+fruits = ["Apple", "Banana", "Mango"]
+print("\nList")
+print("Value:", fruits)
+print("Type:", type(fruits))
 
+# ------------------------------------------------------------
+# tuple
+# ------------------------------------------------------------
+colors = ("Red", "Green", "Blue")
+print("\nTuple")
+print("Value:", colors)
+print("Type:", type(colors))
 
-quantity_text = "2"
-quantity_number = int(quantity_text)
+# ------------------------------------------------------------
+# set
+# ------------------------------------------------------------
+numbers = {10, 20, 30}
+print("\nSet")
+print("Value:", numbers)
+print("Type:", type(numbers))
 
-print(quantity_number)
-print(type(quantity_number))
+# ------------------------------------------------------------
+# dictionary
+# ------------------------------------------------------------
+student = {
+    "name": "Lakshmi",
+    "age": 20,
+    "course": "Python"
+}
+print("\nDictionary")
+print("Value:", student)
+print("Type:", type(student))
 
+# ============================================================
+# 3. TYPE CONVERSION
+# ============================================================
+# ------------------------------------------------------------
+# String -> Integer
+# ------------------------------------------------------------
+number = "100"
+number = int(number)
+print("\nString to Integer")
+print("Value:", number)
+print("Type:", type(number))
 
-price_text = "250.50"
-price_number = float(price_text)
+# ------------------------------------------------------------
+# Integer -> Float
+# ------------------------------------------------------------
+number = 100
+number = float(number)
+print("\nInteger to Float")
+print("Value:", number)
+print("Type:", type(number))
 
-print(price_number)
-print(type(price_number))
+# ------------------------------------------------------------
+# Float -> Integer
+# ------------------------------------------------------------
+price = 250.75
+price = int(price)
+print("\nFloat to Integer")
+print("Value:", price)
+print("Type:", type(price))
 
+# ------------------------------------------------------------
+# Integer -> String
+# ------------------------------------------------------------
+number = 100
+number = str(number)
+print("\nInteger to String")
+print("Value:", number)
+print("Type:", type(number))
 
-quantity_text = str(quantity_number)
+# ------------------------------------------------------------
+# String -> Float
+# ------------------------------------------------------------
+price = "250.50"
+price = float(price)
+print("\nString to Float")
+print("Value:", price)
+print("Type:", type(price))
 
-print(quantity_text)
-print(type(quantity_text))
+# ------------------------------------------------------------
+# Integer -> Boolean
+# ------------------------------------------------------------
+number = 1
+result = bool(number)
+print("\nInteger to Boolean")
+print("Value:", result)
+print("Type:", type(result))
 
+# ------------------------------------------------------------
+# String -> Boolean
+# ------------------------------------------------------------
+text = "Python"
+result = bool(text)
+print("\nString to Boolean")
+print("Value:", result)
+print("Type:", type(result))
 
-print("Hotel Name:", hotel_name)
-print("Food Item:", food_item)
-print("Quantity:", quantity)
-print("Price:", price)
-print("Available:", is_available)
+# ------------------------------------------------------------
+# List -> Tuple
+# ------------------------------------------------------------
+fruits = ["Apple", "Banana", "Mango"]
+result = tuple(fruits)
+print("\nList to Tuple")
+print("Value:", result)
+print("Type:", type(result))
 
+# ------------------------------------------------------------
+# Tuple -> List
+# ------------------------------------------------------------
+colors = ("Red", "Green", "Blue")
+result = list(colors)
+print("\nTuple to List")
+print("Value:", result)
+print("Type:", type(result))
 
-hotel_name = input("Enter hotel name: ")
-food_item = input("Enter food item: ")
-quantity = int(input("Enter quantity: "))
-price = float(input("Enter price per item: "))
-
-total = quantity * price
-tax = total * 0.05
-final_amount = total + tax
-
-print()
-print("----- HOTEL FOOD BILL -----")
-print("Hotel Name:", hotel_name)
-print("Food Item:", food_item)
-print("Quantity:", quantity)
-print("Price Per Item:", price)
-print("Total:", total)
-print("Tax:", tax)
-print("Final Amount:", final_amount)
+# ------------------------------------------------------------
+# List -> Set
+# ------------------------------------------------------------
+numbers = [10, 20, 20, 30]
+result = set(numbers)
+print("\nList to Set")
+print("Value:", result)
+print("Type:", type(result))
