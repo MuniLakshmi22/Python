@@ -22,7 +22,6 @@ Student: True
 # ------------------------------------------------------------
 # int
 # ------------------------------------------------------------
-age = 20
 print("\nInteger")
 print("Value:", age)
 print("Type:", type(age))
@@ -55,7 +54,6 @@ Type: <class 'complex'>
 # ------------------------------------------------------------
 # string
 # ------------------------------------------------------------
-name = "Lakshmi"
 print("\nString")
 print("Value:", name)
 print("Type:", type(name))
@@ -66,7 +64,6 @@ Type: <class 'str'>
 # ------------------------------------------------------------
 # boolean
 # ------------------------------------------------------------
-is_student = True
 print("\nBoolean")
 print("Value:", is_student)
 print("Type:", type(is_student))
@@ -111,8 +108,6 @@ Type: <class 'set'>
 # dictionary
 # ------------------------------------------------------------
 student = {
-    "name": "Lakshmi",
-    "age": 20,
     "course": "Python"
 }
 print("\nDictionary")
@@ -140,7 +135,6 @@ Type: <class 'int'>
 # ------------------------------------------------------------
 # Integer -> Float
 # ------------------------------------------------------------
-number = 100
 number = float(number)
 print("\nInteger to Float")
 print("Value:", number)
@@ -152,7 +146,6 @@ Type: <class 'float'>
 # ------------------------------------------------------------
 # Float -> Integer
 # ------------------------------------------------------------
-price = 250.75
 price = int(price)
 print("\nFloat to Integer")
 print("Value:", price)
@@ -164,7 +157,6 @@ Type: <class 'int'>
 # ------------------------------------------------------------
 # Integer -> String
 # ------------------------------------------------------------
-number = 100
 number = str(number)
 print("\nInteger to String")
 print("Value:", number)
@@ -176,7 +168,6 @@ Type: <class 'str'>
 # ------------------------------------------------------------
 # String -> Float
 # ------------------------------------------------------------
-price = "250.50"
 price = float(price)
 print("\nString to Float")
 print("Value:", price)
@@ -212,7 +203,6 @@ Type: <class 'bool'>
 # ------------------------------------------------------------
 # List -> Tuple
 # ------------------------------------------------------------
-fruits = ["Apple", "Banana", "Mango"]
 result = tuple(fruits)
 print("\nList to Tuple")
 print("Value:", result)
@@ -224,7 +214,6 @@ Type: <class 'tuple'>
 # ------------------------------------------------------------
 # Tuple -> List
 # ------------------------------------------------------------
-colors = ("Red", "Green", "Blue")
 result = list(colors)
 print("\nTuple to List")
 print("Value:", result)
