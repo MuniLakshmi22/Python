@@ -54,6 +54,10 @@ Type: <class 'complex'>
 # ------------------------------------------------------------
 # string
 # ------------------------------------------------------------
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 print("\nString")
 print("Value:", name)
 print("Type:", type(name))
@@ -230,9 +234,12 @@ result = set(numbers)
 print("\nList to Set")
 print("Value:", result)
 print("Type:", type(result))
+<<<<<<< Updated upstream
 #o/p    List to Set
 Value: {10, 20, 30}
 Type: <class 'set'>
+=======
+>>>>>>> Stashed changes
 
 # ============================================================
 # 4. INPUT WITH TYPE CONVERSION
@@ -241,10 +248,15 @@ Type: <class 'set'>
 name = input("\nEnter your name: ")
 age = int(input("Enter your age: "))
 salary = float(input("Enter your salary: "))
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 print("\nUser Details")
 print("Name:", name)
 print("Age:", age)
 print("Salary:", salary)
+<<<<<<< Updated upstream
 print("\nData Types")
 print("Name Type:", type(name))
 print("Age Type:", type(age))
@@ -258,3 +270,10 @@ Data Types
 Name Type: <class 'str'>
 Age Type: <class 'int'>
 Salary Type: <class 'float'>
+=======
+
+print("\nData Types")
+print("Name Type:", type(name))
+print("Age Type:", type(age))
+print("Salary Type:", type(salary))
+>>>>>>> Stashed changes
